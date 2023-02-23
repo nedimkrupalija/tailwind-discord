@@ -39,11 +39,13 @@ const Post = ({ name, timestamp, text }) => {
             <div className="avatar-wrapper">
                 <img src={`https://avatars.dicebear.com/api/open-peeps/${seed}.svg`} alt='' className="avatar"/>
             </div>
+
         <div className="post-content">
             <p className="post-owner">
                 {name}
                 <small className="timestamp">{timestamp}</small>
             </p>
+            <p className="post-text">{text}</p>
         </div>
        </div> 
     );
