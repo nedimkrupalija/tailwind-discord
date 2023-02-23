@@ -8,8 +8,8 @@ const SideBar = () =>{
             <SideBarIcon icon={<FaFire size="28"/>}/>
             <SideBarIcon icon={<BsPlus size="32"/>}/>
             <SideBarIcon icon={<BsFillLightningFill size="20"/>}/>
-            <SideBarIcon icon={<BsGearFill size="20"/>}/>
             <SideBarIcon icon={<FaBeer size="28"/>}/>
+            <BotSidebarIcon icon={<BsGearFill size="20"/>}/>
        </div>
     );
 };
@@ -22,8 +22,15 @@ const SideBarIcon = ({ icon, text = 'Neka pomoc' }) =>(
         {text}
         </span>
     </div>
-    
+);
 
+const BotSidebarIcon = ({ icon, text = 'Neka pomoc' }) =>(
+    <div className="sidebar-bottom group">
+        {icon}
+        <span class="sidebar-tooltip group-hover:scale-100">
+        {text}
+        </span>
+    </div>
 );
 
 export default SideBar;
