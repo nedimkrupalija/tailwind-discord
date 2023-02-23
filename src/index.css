@@ -26,4 +26,51 @@
     cursor-pointer;
   }
 
+  .channel-bar{
+    @apply w-80 h-auto m-0 ml-16 bg-gray-800
+    overflow-hidden;
+
+  }
+
+  .channel-container{
+    @apply flex flex-col items-center justify-start
+    p-1 m-0;
+  }
+  .dropdown{
+    @apply m-0 w-full px-2 pb-2 transition duration-300
+    ease-in-out;
+  }
+  .dropdown-header{
+    @apply flex flex-row items-center justify-evenly
+    mx-0 text-gray-500
+    cursor-pointer;
+  }
+  .dropdown-header-text{
+    @apply text-gray-500 text-opacity-90
+    text-lg font-semibold
+    cursor-default;
+  }
+  .dropdown-header-text-selected{
+    @apply text-blue-500 text-opacity-90 text-lg font-bold
+    transition duration-300 ease-in-out hover:text-blue-300;
+  }
+  .dropdown-selection{
+    @apply flex flex-row items-center justify-evenly
+    mt-1 mr-auto ml-2
+    transition duration-300 ease-in-out
+    cursor-pointer;
+  }
+  .dropdown-selection-text{
+    @apply text-gray-500 font-semibold tracking-wide
+    mr-auto transition duration-300 ease-in-out
+    hover:text-gray-100
+    cursor-pointer;
+  }
+  ::-webkit-scrollbar{
+    background-color: transparent;
+  }
+  ::-webkit-scrollbar-thumb{
+    @apply bg-green-400;
+    }
+
 }

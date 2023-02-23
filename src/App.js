@@ -1,9 +1,10 @@
 import SideBar from './SideBar';
-
+import ChannelBar from './ChannelBar';
 function App() {
   return (
       <div className="flex">
-          <SideBar/>
+          {/* <SideBar/> */}
+          <ChannelBar/>
       </div>
   );
 }
