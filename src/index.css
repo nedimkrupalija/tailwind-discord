@@ -27,7 +27,7 @@
   }
 
   .channel-bar{
-    @apply w-80 h-auto m-0 ml-16 bg-gray-800
+    @apply w-80 h-screen m-0 ml-16 bg-gray-800
     overflow-hidden;
 
   }
@@ -66,11 +66,21 @@
     hover:text-gray-100
     cursor-pointer;
   }
-  ::-webkit-scrollbar{
-    background-color: transparent;
+  .channel-block{
+    @apply flex items-start justify-start
+    p-1 ml-1 mt-1
   }
-  ::-webkit-scrollbar-thumb{
-    @apply bg-green-400;
-    }
+  .channel-block-text{
+    @apply text-gray-400 text-2xl font-semibold
+    cursor-default transition duration-200 ease-in-out
+    hover:text-gray-100
+  }
 
 }
+
+::-webkit-scrollbar{
+  background-color: transparent;
+}
+::-webkit-scrollbar-thumb{
+  @apply bg-green-400;
+  }
